@@ -23,11 +23,15 @@ func main() {
 	ptx = &x
 	fmt.Printf("ptx ist: %p, *ptx ist: %d\n", ptx, *ptx)
 
-	fmt.Println(stringutil.Reverse("!oG ,olleH"))
+	fmt.Printf(stringutil.Reverse("!oG ,olleH"))
 
 	var a [5]int
 	a[0] = 1
 
 	fmt.Println("Array ist: ", a[0])
+
+	for i := 0; i < 5; i++ {
+		fmt.Printf("Array[%d] = %d\n", i, a[i])
+	}
 
 }
